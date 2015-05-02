@@ -16,9 +16,7 @@ add_action('wp_enqueue_scripts', 'load_cornerstone_child_scripts',50);
 
 //Remove Orbit
 function remove_orbit () {
-
-remove_action('init', 'Orbit');
-
+	remove_action('init', 'Orbit');
 }
 add_action('after_setup_theme', 'remove_orbit');
 
@@ -30,4 +28,3 @@ function custom_post_author_archive($query) {
 }
 add_action('pre_get_posts', 'custom_post_author_archive');
 
-?>

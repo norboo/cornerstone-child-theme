@@ -1,49 +1,52 @@
 <?php
-/**
- * The template for displaying all pages.
- *
- * This is the template that displays all pages by default.
- * Please note that this is the WordPress construct of pages
- * and that other 'pages' on your WordPress site will use a
- * different template.
- *
- * @package WordPress
- * @subpackage Cornerstone
- * @since Cornerstone 1.0
- */
+/*
+Template Name: Homepage Template
+*/
+
 get_header(); ?>
 
 <div class="row">
-	<div id="primary" class="site-content small-12 medium-8 columns">
-		<div id="content" role="main">
-
-			<?php while ( have_posts() ) : the_post(); ?>
-
-				<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-
-					<header class="entry-header">
-						<h1 class="entry-title"><?php the_title(); ?></h1>
-					</header>
-
-					<div class="entry-content">
-						<?php the_content(); ?>
-					</div>
-
-					<footer class="entry-meta">
-						<?php edit_post_link( __( 'Edit', 'cornerstone' ), '<span class="edit-link">', '</span>' ); ?>
-					</footer>
-
-				</article>
-
-				<?php comments_template( '', true ); ?>
-
-			<?php endwhile; ?>
-
+	<div class="large-12 columns">
+		<div id="slider">
+		<img src="http://placehold.it/1000x400&text=[ img 1 ]"/>
+		</div>
+		<hr/>
+	</div>
+</div>
+         
+<div class="row">
+	<div class="large-4 columns">
+		<img src="http://placehold.it/400x300&text=[img]"/>
+		<h4>This is a content section.</h4>
+		<p>Bacon ipsum dolor sit amet nulla ham qui sint exercitation eiusmod commodo, chuck duis velit. Aute in reprehenderit, dolore aliqua non est magna in labore pig pork biltong. Eiusmod swine spare ribs reprehenderit culpa. Boudin aliqua adipisicing rump corned beef.</p>
+	</div>
+	<div class="large-4 columns">
+		<img src="http://placehold.it/400x300&text=[img]"/>
+		<h4>This is a content section.</h4>
+		<p>Bacon ipsum dolor sit amet nulla ham qui sint exercitation eiusmod commodo, chuck duis velit. Aute in reprehenderit, dolore aliqua non est magna in labore pig pork biltong. Eiusmod swine spare ribs reprehenderit culpa. Boudin aliqua adipisicing rump corned beef.</p>
+	</div>
+	<div class="large-4 columns">
+		<img src="http://placehold.it/400x300&text=[img]"/>
+		<h4>This is a content section.</h4>
+		<p>Bacon ipsum dolor sit amet nulla ham qui sint exercitation eiusmod commodo, chuck duis velit. Aute in reprehenderit, dolore aliqua non est magna in labore pig pork biltong. Eiusmod swine spare ribs reprehenderit culpa. Boudin aliqua adipisicing rump corned beef.</p>
+	</div>
+</div>
+        
+     
+<div class="row">
+	<div class="large-12 columns">
+		<div class="panel">
+			<h4>Get in touch!</h4>
+			<div class="row">
+				<div class="large-9 columns">
+					<p>We'd love to hear from you, you attractive person you.</p>
+				</div>
+				<div class="large-3 columns">
+					<a href="#" class="radius button right">Contact Us</a>
+				</div>
+			</div>
 		</div>
 	</div>
-
-	<?php get_sidebar(); ?>
-
 </div>
 
 <?php get_footer(); ?>

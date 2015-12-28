@@ -8,7 +8,7 @@ get_header(); ?>
 <div class="row">
 	<div class="large-12 columns">
 		<div id="slider">
-		<img src="http://placehold.it/1000x400&text=[ img 1 ]"/>
+		<img src="http://placehold.it/1200x400&text=[ img 1 ]"/>
 		</div>
 		<hr/>
 	</div>

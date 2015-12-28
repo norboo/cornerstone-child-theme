@@ -15,10 +15,10 @@ function load_cornerstone_child_scripts() {
 add_action('wp_enqueue_scripts', 'load_cornerstone_child_scripts',50);
 
 //Remove Orbit
-function remove_orbit () {
+/*function remove_orbit () {
 	remove_action('init', 'Orbit');
 }
-add_action('after_setup_theme', 'remove_orbit');
+add_action('after_setup_theme', 'remove_orbit');*/
 
 // Add pages to query. Show Author archive when no posts
 function custom_post_author_archive($query) {

@@ -23,3 +23,5 @@ function custom_post_author_archive($query) {
 }
 add_action('pre_get_posts', 'custom_post_author_archive');
 
+require_once( 'inc/orbit.php' );
+

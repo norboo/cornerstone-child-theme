@@ -32,7 +32,11 @@ GitHub Branch: master
 
 .entry-content ul:not([class*="block-grid-"]):not(.clearing-thumbs),.widget_archive ul{margin-left:2em;}
 
+/*** General Resets ***/
+
 .off-canvas-content{box-shadow:none;padding-top: .9375rem;}
+
+.sidebar ul{list-style: none; margin: 0 0 0 0;}
 
 /* Small screens */
 /* Define mobile styles */
